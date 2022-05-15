@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Effectiveness of a Drug</title>
+    <link rel="stylesheet" href="/static/css/homestyle.css">
+</head>
+<body background="/static/images/image1.jpg" >
+    <div  class="input form">
+        <form action="{{url_for('predict')}}"method="POST" id="input head">
+          <div>
+          <h1 id="heading">Effectiveness of a Drug</h1>
+                  
+          <br>
+          <h3 id="select">EaseofUse</h23>
+            <select name ="EaseofUse">
+              <option name ="a1">1</option>
+              <option name ="a2">2</option>
+              <option name ="a3">3</option>
+              <option name ="a4">4</option>
+              <option name ="a5">5</option>
+            </select>
+            <br>
+          <h3 id="select">Satisfaction</h23>
+            <select name ="Satisfaction">
+              <option name ="f1">1</option>
+              <option name ="f2">2</option>
+              <option name ="f3">3</option>
+              <option name ="f4">4</option>
+              <option name ="f5">5</option>
+            </select>
+            <br>
+          <h3 id="select">Age</h23>
+              <select name ="Age">
+                <option name ="v1">'0-2'</option>
+                <option name ="v2">'3-6'</option>
+                <option name ="v3">'7-12'</option>
+                <option name ="v4">'13-18'</option>
+                <option name ="v5">'19-24'</option>
+                <option name ="v6">'25-34'</option>
+                <option name ="v7">'35-44'</option>
+                <option name ="v8">'45-54'</option>
+                <option name ="v9">'55-64'</option>
+                <option name ="v10">'65-74'</option>
+                <option name ="v11">'75 or over'</option>
+            </select>
+            <br>
+          <h3 id="select">Condition</h23>
+              <select name ="Condition">
+                <option name ="c1">Chronic Heart Failure</option>
+                <option name ="c2">Diastolic Heart Failure</option>
+                <option name ="c3">Failure of the Left Ventricle of the Heart</option>
+                <option name ="c4">Heart Attack</option>
+                <option name ="c5">High Blood Pressure</option>
+                <option name ="c6">Kidney Disease from Diabetes</option>
+                <option name ="c7">Kidney Problem caused by Body Tissue Disease-Scleroderma</option>
+                <option name ="c8">Migraine Prevention</option>
+                <option name ="c9">Nondiabetic Proteinuric Nephropathy</option>
+                <option name ="c10">Prevention of Recurrent Atrial Fibrillation</option>
+                <option name ="c11">Retinal Changes of Eye in a Patient with Diabetes</option>
+                <option name ="c12">Other</option>
+            </select>
+            <br>
+          <h3 id="select">Sex</h23>
+              <select name ="Sex">
+                <option name ="d1">Male</option>
+                <option name ="d2">Female</option>
+              </select>
+                <br>
+                <br>
+                <br>
+          <button id="submit" type="submit">Predict</button>
+          
+        </div>
+        </form>
+       
+      </div>
+</body>
+</html>
